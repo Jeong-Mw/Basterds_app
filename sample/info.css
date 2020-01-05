@@ -1,0 +1,73 @@
+body{
+    position: relative;
+    background: url('https://images.alphacoders.com/105/thumb-1920-1056478.jpg');
+}
+
+.frame{
+    margin: 2rem 10rem;
+}
+
+h1{
+    margin-top: 0;
+}
+
+.username {
+    font-family: SegoeUI;
+    font-size: 78px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: left;
+    color: dimgrey;
+  }
+
+.info{
+
+}
+
+.infobox{
+    display: inline-table;
+    float: left;
+    margin: 0rem 0.4rem 1rem 0.4rem;
+    background-color: white;
+    padding: 1rem 1.7rem;
+    min-width: 180px;
+    width: 20rem;
+    max-width: 350px;
+    height: auto;
+    min-height: 10rem;
+    border-radius: 0.6rem;
+    background-color: rgba( 255, 255, 255, 0.9 );
+}
+
+input{
+    font-size: 0.8em;
+    height: 1.8em;
+    width: 100%;
+    min-width: 15rem;
+    max-width: 30rem;
+    padding: 0.6em;
+    outline: none;
+    border :solid 1px;
+    border-color: steelblue;
+    float: right;
+}
+.searchbar{
+    padding-top: 1rem;
+    padding-right: 2rem;
+}
+
+.subtitle{
+    font-size: 1.6rem;
+    font-weight: lighter;
+}
+
+.data{
+    font-size: 3.2rem;
+    text-align: center;
+    margin-top: 0.8rem;
+    color: #69bdb0;
+    font-weight: bold;
+}

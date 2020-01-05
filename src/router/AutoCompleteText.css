@@ -1,0 +1,31 @@
+.AutoComplete{
+    border: 1px solid gray;
+    width: 40%;
+    font-size: 14px;
+    color: black;
+    margin: auto;
+    margin-top: 20%;
+}
+
+.AutoComplete input{
+    width: 100%;
+    border: none;
+    padding: 10px 5px;
+    box-sizing: border-box;
+}
+
+.AutoComplete ul{
+    text-align: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.AutoComplete li{
+    padding: 10px 5px;
+}
+
+.AutoComplete li:hover{
+    background-color: darkgray;
+}

@@ -1,0 +1,91 @@
+body{
+    text-align: left;
+    background-image: url('https://images.alphacoders.com/105/thumb-1920-1056478.jpg');
+}
+
+.frame{
+
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+
+input {
+height: 1.8em;
+width: 35rem;
+padding: 10px;
+box-shadow: 3px 3px 10px #566270;
+outline: none;
+border: none;
+}
+
+::placeholder {
+    color: black;
+}
+
+
+#recommend {
+margin-top: 1px;
+position: absolute;
+background: ghostwhite;
+padding: 0 10px;
+}
+
+.item {
+	height: 1.8em;
+	width: 35rem;
+	outline: none;
+}
+
+.item:hover {
+	color: #9baec8;
+}
+.text {
+	font-weight: bold;
+}
+
+.invisible {
+	display: none;
+}
+
+.signup {
+    width: 60px;
+    height: 27px;
+    font-family: SegoeUI;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.35;
+    letter-spacing: normal;
+    text-align: left;
+    color: #707070;
+}
+
+.login {
+    width: 45px;
+    height: 27px;
+    font-family: SegoeUI;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.35;
+    letter-spacing: normal;
+    text-align: left;
+    color: #707070;
+}  
+
+a{
+    text-decoration: none;
+}
+
+.p{
+    margin-right: 0.6em;
+    text-align: right;
+    color: gray;
+    font-size: 1rem;
+}
