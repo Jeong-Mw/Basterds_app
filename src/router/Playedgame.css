@@ -1,0 +1,52 @@
+
+.UserInfo .game-box{
+    border: grey solid 2px;
+    height: 6rem;
+    width: 120px;
+    text-align: center;
+    flex-direction: column;
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: bold;
+ }
+ 
+ .UserInfo .bar{
+    display: block;
+    width: 26px;
+    margin: 5px auto;
+    height: 2px;
+    background: lightslategrey;
+ }
+ 
+ .UserInfo .game-box .mode{
+    color: rgba(237, 237, 237);
+ }
+ 
+ .UserInfo .datatext{
+    color: white;
+    margin-top: 5px;
+ }
+ 
+ .UserInfo .game-b{
+    display: table-cell;
+    height: 96px;
+    vertical-align: middle;
+    text-align: center;
+ }
+ 
+ .UserInfo .datatitletext{
+    margin-bottom: 16px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: rgba(237, 237, 237);
+ }
+ 
+ 
+ .UserInfo .game-stats{
+ 
+    display: table;
+ }
+ 
+ .UserInfo .kill{
+    margin: 0px 30px;
+ }
