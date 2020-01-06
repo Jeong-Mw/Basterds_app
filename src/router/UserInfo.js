@@ -54,6 +54,7 @@ export default class UserInfo extends React.Component {
                     </div>
 
                     <div className="game">
+            
                         <div className="game-b game-box">
                             <div className="datatext mode">(meisterboi)</div>
                             <div className="datatext bar"></div>
@@ -63,7 +64,7 @@ export default class UserInfo extends React.Component {
                         {/* <div className="game-stats"> */}
                         <div className="game-b">
                             <div className="datatext datatitletext kill">kill</div>
-                            <div className="datatext damage">(kill)</div>
+                            <div className="datatext kill">(kill)</div>
                         </div>
                         <div className="game-b">
                             <div className="datatext datatitletext kill">damage</div>
@@ -88,6 +89,7 @@ export default class UserInfo extends React.Component {
 
                         {/* </div> */}
                     </div>
+                
                 </div>
             </div>
         );

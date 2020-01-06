@@ -69,12 +69,10 @@
 .UserInfo .game{
    background-color: rgba(165, 141, 169, 0.8);
    margin: 1rem 0.29rem;
-   /* border-radius: 0.6rem; */
    height: 6rem;
    margin-top: 1rem;
    display: table;
    width: 1210px;
-   border-collapse: collapse;
 }
 
 .UserInfo .subtitle{
@@ -133,4 +131,8 @@
 .UserInfo .game-stats{
 
    display: table;
+}
+
+.UserInfo .kill{
+   margin: 0px 30px;
 }
