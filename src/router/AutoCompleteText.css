@@ -7,6 +7,12 @@
     margin-top: 20%;
 }
 
+.AutoComplete .bg{
+    background: url('https://images.alphacoders.com/105/thumb-1920-1056478.jpg');
+    background-size: cover;
+    height: 100%;
+}
+
 .AutoComplete input{
     width: 100%;
     border: none;

@@ -23,10 +23,6 @@ h1{
     color: dimgrey;
   }
 
-.info{
-
-}
-
 .infobox{
     display: inline-table;
     float: left;
@@ -68,6 +64,6 @@ input{
     font-size: 3.2rem;
     text-align: center;
     margin-top: 0.8rem;
-    color: #69bdb0;
+    color: ;
     font-weight: bold;
 }

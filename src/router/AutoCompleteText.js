@@ -138,17 +138,19 @@ class Autocomplete extends React.Component {
     }
 
     return (
-        <div className="AutoComplete">
-            <input
+      <div className="AutoComplete">
+        <div className="bg">
+          <input
             type="text"
             onChange={onChange}
             onKeyDown={onKeyDown}
             value={userInput}
-            />
-            {suggestionsListComponent}
+          />
+          {suggestionsListComponent}
         </div>
+      </div>
 
-        
+
     );
   }
 }

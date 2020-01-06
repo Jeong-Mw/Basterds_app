@@ -1,8 +1,74 @@
-.body{
-   background: url('https://images7.alphacoders.com/105/thumb-1920-1058130.jpg');
-     /* Full height */
+.UserInfo .bg-box .box{
+   display: inline-flex;
+   margin: 0rem 0.4rem 1rem 0.4rem;
+   background-color: gray;
+   padding: 1rem 1.7rem;
+   text-align: center;
+   min-width: 180px;
+   width: 17rem;
+   height: 12rem;
+   border-radius: 0.6rem;
+   background-color: rgba( 153,170,181, 0.7 );
+}
 
-  /* Center and scale the image nicely */
-  
-  background-size: cover;
+.UserInfo .box div{
+   flex: 1;
+}
+
+.UserInfo .bg-box{
+   margin: 0rem 10rem;
+   margin-bottom: 5rem;
+   text-align: left;
+   position: relative;
+   display: inline-block;
+   background-color: rgba( 255,255,255, 0.4 );
+   border-radius: 0.7rem;
+   padding: 0rem 5rem;
+}
+
+.UserInfo h2{
+   margin-top: 0;
+   color: black;
+   font-size: 2rem;
+   font-weight: lighter;
+}
+
+.UserInfo .username{
+   color: #000;
+   font-size: 4rem;
+}
+ 
+.UserInfo .data{
+   display: inline-block;
+   font-size: 3.2rem;
+   margin-top: 0.8rem;
+   color: white;
+   font-weight: bold;
+}
+
+.UserInfo .games{
+   margin-top: 1rem;
+}
+
+.UserInfo .game{
+   background-color: rgba(165, 141, 169, 0.8);
+   margin: 1rem 0.29rem;
+   border-radius: 0.6rem;
+   height: 6rem;
+}
+
+.UserInfo .game .game-box{
+   flex: 1;
+   float: left;
+   background-color: rgba(206, 176, 212, 0.5);
+   border-radius: 0.6rem;
+   height: 6rem;
+   width: 10rem;
+   text-align: center;
+}
+
+.UserInfo .game .game-box div{
+   margin-top: 1rem;
+   color: white;
+   font-weight: bold;
 }
