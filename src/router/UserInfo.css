@@ -1,53 +1,69 @@
-.UserInfo .bg-box .box{
-   display: inline-flex;
-   margin: 0rem 0.4rem 1rem 0.4rem;
-   background-color: gray;
-   padding: 1rem 1.7rem;
-   text-align: center;
-   min-width: 180px;
-   width: 17rem;
-   height: 12rem;
-   border-radius: 0.6rem;
-   background-color: rgba( 153,170,181, 0.7 );
-}
-
-.UserInfo .box div{
-   flex: 1;
-}
-
 .UserInfo .bg-box{
-   margin: 0rem 10rem;
+   margin: 0rem 5rem;
    margin-bottom: 5rem;
    text-align: left;
    position: relative;
-   display: inline-block;
    background-color: rgba( 255,255,255, 0.4 );
    border-radius: 0.7rem;
-   padding: 0rem 5rem;
+   padding: 0.1rem 5rem 4rem 5rem;
 }
 
-.UserInfo h2{
-   margin-top: 0;
-   color: black;
-   font-size: 2rem;
-   font-weight: lighter;
+.UserInfo .usergame{
+   display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+}
+
+.UserInfo .userinfobox{
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+}
+
+.UserInfo .box{
+   display: flex;
+   flex-direction: column;
+   box-sizing: border-box;
+   padding: 16px;
+   border-radius: 4px;
+   background: rgb(211,211,211, 0.8);
+   flex: 1 0 222px;
+   margin: 8px 0px 0px 8px;
+   /* min-width: min-content;
+   width: 23rem; */
+}
+
+.UserInfo .box-pie{
+   box-sizing: border-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    cursor: pointer;
+    flex-direction: row;
+    padding: 16px;
+    flex: 1 0 222px;
+}
+
+.UserInfo .piechart{
+   position: relative;
+    width: 5rem;
+    height: 5rem;
+    box-sizing: border-box;
+    margin: 1rem 0rem 0rem 1rem;
 }
 
 .UserInfo .username{
    color: #000;
    font-size: 4rem;
 }
- 
+
 .UserInfo .data{
    display: inline-block;
-   font-size: 3.2rem;
-   margin-top: 0.8rem;
+   font-size: 2rem;
    color: white;
    font-weight: bold;
-}
-
-.UserInfo .games{
-   margin-top: 1rem;
+   margin-top: 0.4rem;
+   text-align: left;
 }
 
 .UserInfo .game{
@@ -55,9 +71,10 @@
    margin: 1rem 0.29rem;
    border-radius: 0.6rem;
    height: 6rem;
+   margin-top: 1rem;
 }
 
-.UserInfo .game .game-box{
+.UserInfo .game-box{
    flex: 1;
    float: left;
    background-color: rgba(206, 176, 212, 0.5);
@@ -65,10 +82,23 @@
    height: 6rem;
    width: 10rem;
    text-align: center;
+   display: flex;
+   flex-direction: column;
 }
 
-.UserInfo .game .game-box div{
+.UserInfo .game-box span{
    margin-top: 1rem;
    color: white;
    font-weight: bold;
+}
+
+.UserInfo .subtitle{
+   color: white;
+   font-size: 1.4rem;
+   font-weight: lighter;
+}
+
+
+.UserInfo .box span{
+   margin-left: 1rem;
 }
