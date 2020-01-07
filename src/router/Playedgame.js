@@ -1,12 +1,28 @@
 import React from 'react'
 import './Playedgame.css'
+import PropTypes from "prop-types";
 
 export default class Playedgame extends React.Component {
+    static propTypes = {
+        data: PropTypes.instanceOf(Array)
+      };
+    
+      static defaultProps = {
+        data: []
+      };
+    
+
     constructor(props) {
         super(props)
 
+        this.state = {
+            kill: 0,
+            damage: []
     }
+}
+
     
+
 
     render() {
         return (

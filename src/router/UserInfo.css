@@ -36,20 +36,35 @@
 .UserInfo .box-pie{
    box-sizing: border-box;
     display: flex;
-    -webkit-box-pack: justify;
     justify-content: space-between;
     cursor: pointer;
     flex-direction: row;
-    padding: 16px;
     flex: 1 0 222px;
+}
+
+.UserInfo .box-pie .data{
+   align-self: center;
 }
 
 .UserInfo .piechart{
    position: relative;
-    width: 6rem;
-    height: 6rem;
+    width: 7rem;
+    height: 7rem;
     box-sizing: border-box;
     margin: 1rem 0rem 0rem 1rem;
+}
+
+.UserInfo .colorbox{
+   width: 10px;
+   height: 10px;
+}
+
+.UserInfo .win{
+   background-color: #843B94;
+}
+
+.UserInfo .loss{
+   background-color: #9D74A6
 }
 
 .UserInfo .username{
