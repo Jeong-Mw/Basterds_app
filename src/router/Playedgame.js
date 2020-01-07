@@ -4,7 +4,7 @@ import './Playedgame.css'
 export default class Playedgame extends React.Component {
     constructor(props) {
         super(props)
-        
+
     }
     
 
@@ -12,10 +12,10 @@ export default class Playedgame extends React.Component {
         return (
             <div className="game">
                 <div className="game-b game-box">
-                    <div className="datatext mode">(meisterboi)</div>
+                    <div className="datatext team">(meisterboi)</div>
                     <div className="datatext bar"></div>
                     <div className="datatext date">(date)</div>
-                    <div className="datatext time">(time)</div>
+                    <div className="datatext time">{}(time)</div>
                 </div>
                 <div className="game-b">
                     <div className="datatext datatitletext kill">kill</div>

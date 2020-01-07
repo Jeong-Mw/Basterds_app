@@ -15,7 +15,7 @@ function App() {
           <div>
             <Switch>
               <Route path="/" exact component={ Autocomplete } />
-              <Route path="/info" component={UserInfo} />
+              <Route path="/info/:id" component={UserInfo} />
               <Route path="/search" component={ Autocomplete } />
             </Switch>
           </div>
