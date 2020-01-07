@@ -3,6 +3,7 @@ import './UserInfo.css'
 import Playedgame from './Playedgame'
 import PieChart from 'react-minimal-pie-chart';
 import axios from 'axios';
+import GameList from './GameList'
 
 export default class UserInfo extends React.Component {
     constructor(props) {
@@ -14,14 +15,15 @@ export default class UserInfo extends React.Component {
             kill:0,
             win_count:0,
             match_count:0,
-            loss_count:0
+            loss_count:0,
+            matches: []
         }
     }
-
     componentDidMount() {
         const url = `http://donote.co:8000/api/v1/${this.props.match.params.id}/summary/`
+        const match_url = `http://donote.co:8000/api/v1/b77c255b90269c87abbedf893e62c7af/match/`
 
-        const response = axios.get(url).then((res) => {
+        axios.get(url).then((res) => {
             this.setState({
                 playtime: new Date(res.data.total.playtime),
                 kill: res.data.total.killed,
@@ -29,6 +31,16 @@ export default class UserInfo extends React.Component {
                 match_count:res.data.total.match_count
             })
         })
+
+        axios.get(match_url).then((res) => {
+            console.log(res.data.data);
+            this.setState({
+              matches: res.data.data
+            })
+            
+        })
+
+        
     }
 
     render() {
@@ -84,9 +96,7 @@ export default class UserInfo extends React.Component {
                         </div>
 
                     </div>
-                    <Playedgame></Playedgame>
-                    <Playedgame></Playedgame>
-                    <Playedgame></Playedgame>
+                    <GameList gamelist={this.state.matches}></GameList>
                 </div>
             </div>
 
