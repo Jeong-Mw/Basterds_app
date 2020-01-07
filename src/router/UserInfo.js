@@ -19,12 +19,9 @@ export default class UserInfo extends React.Component {
     }
 
     componentDidMount() {
-        const url = `http://donote.co:8000/api/v1/${this.props.match.params.id}/summary/`;
+        const url = `http://donote.co:8000/api/v1/${this.props.match.params.id}/summary/`
 
         const response = axios.get(url).then((res) => {
-            console.log(res);
-
-            console.log(res.data.total);
             this.setState({
                 playtime: new Date(res.data.total.playtime),
                 kill: res.data.total.killed,
