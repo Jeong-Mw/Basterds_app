@@ -21,7 +21,7 @@ export default class UserInfo extends React.Component {
     }
     componentDidMount() {
         const url = `http://donote.co:8000/api/v1/${this.props.match.params.id}/summary/`
-        const match_url = `http://donote.co:8000/api/v1/b77c255b90269c87abbedf893e62c7af/match/`
+        const match_url = `http://donote.co:8000/api/v1/${this.props.match.params.id}/match/`
 
         axios.get(url).then((res) => {
             this.setState({
