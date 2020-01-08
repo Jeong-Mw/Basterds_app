@@ -52,8 +52,8 @@ export default class UserInfo extends React.Component {
                     <div className="userinfobox">
 
                         <div className="box">
-                            <span className="subtitle">win rating</span>
-                            <span className="data">{this.state.match_count}게임</span>
+                            <span className="subtitle">승률</span>
+                            <span className="data">총 {this.state.match_count}게임</span>
                             <div className="piechart"><PieChart
                                 animate={true}
                                 data={[
@@ -79,20 +79,16 @@ export default class UserInfo extends React.Component {
                                 lengthAngle={360}
                                 lineWidth={100}
                             />
-                            {/* <div className="piechartsample">
-                                <div className="colorbox win"></div><span>win</span>
-                                <div className="colorbox loss"></div><span>loss</span>
-                            </div> */}
                             </div>
                         </div>
 
                         <div className="box">
-                            <span className="subtitle">playtime</span>
+                            <span className="subtitle">총 플레이 시간</span>
                             <span className="data">{this.state.playtime.getDate() - 1}일 {this.state.playtime.getHours()}시간 {this.state.playtime.getMinutes()}분 {this.state.playtime.getSeconds()}초</span>
                         </div>
                         <div className="box">
-                            <span className="subtitle">kill</span>
-                            <span className="data">{this.state.kill}</span>
+                            <span className="subtitle">킬</span>
+                            <span className="data">{this.state.kill} 킬</span>
                         </div>
 
                     </div>

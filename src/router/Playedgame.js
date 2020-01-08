@@ -50,35 +50,31 @@ export default class Playedgame extends React.Component {
                     <div className="datatext time"> {this.state.created_at.getHours()}시 {this.state.created_at.getMinutes()}분 {this.state.created_at.getSeconds()}초</div>
                 </div>
                 <div className="game-b">
-                    <div className="datatext datatitletext kill">playtime</div>
+                    <div className="datatext datatitletext kill">플레이 시간</div>
                     <div className="datatext kill">
                         <div className="datatext date">{this.state.playtime.getUTCDate() - 1}일 {this.state.playtime.getUTCHours()}시간</div>
                         <div className="datatext time">{this.state.playtime.getMinutes()}분 {this.state.playtime.getSeconds()}초</div>
                     </div>
                 </div>
                 <div className="game-b">
-                    <div className="datatext datatitletext kill">kill</div>
+                    <div className="datatext datatitletext kill">킬</div>
                     <div className="datatext kill">{data.kill}</div>
                 </div>
                 <div className="game-b">
-                    <div className="datatext datatitletext kill">damage</div>
+                    <div className="datatext datatitletext kill">데미지</div>
                     <div className="datatext damage">{data.damage}</div>
                 </div>
                 <div className="game-b">
-                    <div className="datatext datatitletext kill">status</div>
+                    <div className="datatext datatitletext kill">상태</div>
                     <div className="datatext damage">{data.status}</div>
                 </div>
                 <div className="game-b">
-                    <div className="datatext datatitletext kill">score</div>
+                    <div className="datatext datatitletext kill">점수</div>
                     <div className="datatext damage">{data.score}</div>
                 </div>
                 <div className="game-b">
-                    <div className="datatext datatitletext kill">spawned</div>
+                    <div className="datatext datatitletext kill">스폰</div>
                     <div className="datatext damage">{data.spawned}</div>
-                </div>
-                <div className="game-b">
-                    <div className="datatext datatitletext kill">score</div>
-                    <div className="datatext damage">{data.score}</div>
                 </div>
             </div>
 
