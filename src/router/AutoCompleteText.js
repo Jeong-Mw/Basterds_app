@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from "react";
 import PropTypes from "prop-types";
 import './AutoCompleteText.css'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 class Autocomplete extends React.Component {
   static propTypes = {
