@@ -16,8 +16,6 @@ export default class Playedgame extends React.Component {
     constructor(props) {
         super(props)
 
-        console.log(props.playtime);
-        
 
         this.state = {
             team: "meisterboi",
@@ -39,7 +37,15 @@ export default class Playedgame extends React.Component {
         /*this.setState({
             playtime: data.playtime
         });*/
-        
+        if(data.status=='loss'){
+            const style = {
+ 
+                backgroundColor : '#000',
+                border: '1px solid black',
+                
+           
+              }
+        }
 
         return (
             <div className="game">
@@ -57,16 +63,16 @@ export default class Playedgame extends React.Component {
                     </div>
                 </div>
                 <div className="game-b">
+                    <div className="datatext datatitletext kill">게임 결과</div>
+                    <div className="datatext damage">{data.status}</div>
+                </div>
+                <div className="game-b">
                     <div className="datatext datatitletext kill">킬</div>
                     <div className="datatext kill">{data.kill}</div>
                 </div>
                 <div className="game-b">
                     <div className="datatext datatitletext kill">데미지</div>
                     <div className="datatext damage">{data.damage}</div>
-                </div>
-                <div className="game-b">
-                    <div className="datatext datatitletext kill">상태</div>
-                    <div className="datatext damage">{data.status}</div>
                 </div>
                 <div className="game-b">
                     <div className="datatext datatitletext kill">점수</div>

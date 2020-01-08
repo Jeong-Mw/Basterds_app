@@ -68,8 +68,10 @@
 }
 
 .UserInfo .username{
-   color: #000;
-   font-size: 4rem;
+   text-transform: capitalize;
+   color: #5C4180;
+   font-size: 5.5rem;
+   margin: 1rem 0rem;
 }
 
 .UserInfo .data{

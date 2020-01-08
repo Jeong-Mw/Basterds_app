@@ -12,10 +12,15 @@ export default class UserInfo extends React.Component {
         this.state = {
             player: this.props.match.params.id,
             playtime: new Date("0001-01-01T00:00:00"),
-            kill:0,
-            win_count:0,
-            match_count:0,
-            loss_count:0,
+            kill: 0,
+            win_count: 0,
+            match_count: 0,
+            loss_count: 0,
+            total:[],
+            insomnia: [],
+            overhit: [],
+            orangefamily: [],
+            meisterboi: [],
             matches: []
         }
     }
@@ -24,23 +29,30 @@ export default class UserInfo extends React.Component {
         const match_url = `http://donote.co:8000/api/v1/${this.props.match.params.id}/match/`
 
         axios.get(url).then((res) => {
+            console.log(res.data);
+
             this.setState({
                 playtime: new Date(res.data.total.playtime),
                 kill: res.data.total.killed,
-                win_count:res.data.total.win_count,
-                match_count:res.data.total.match_count
+                win_count: res.data.total.win_count,
+                match_count: res.data.total.match_count,
+                total: res.data.total,
+                insomnia: res.data.insomnia,
+                overhit: res.data.overhit,
+                orangefamily: res.data.orangefamily,
+                meisterboi: res.data.meisterboi
             })
         })
+
 
         axios.get(match_url).then((res) => {
-            console.log(res.data.data);
             this.setState({
-              matches: res.data.data
+                matches: res.data.data
             })
-            
+
         })
 
-        
+
     }
 
     render() {
@@ -65,7 +77,7 @@ export default class UserInfo extends React.Component {
                                     {
                                         color: '#9D74A6',
                                         title: 'two',
-                                        value: (this.state.match_count-this.state.win_count)
+                                        value: (this.state.match_count - this.state.win_count)
                                     }
                                 ]}
                                 label={function noRefCheck() { }}
@@ -91,6 +103,35 @@ export default class UserInfo extends React.Component {
                             <span className="data">{this.state.kill} 킬</span>
                         </div>
 
+                        
+                        <div className="box">
+                            <span className="subtitle">점수</span>
+                            <span className="data">{this.state.total.score} 점</span>
+                        </div>
+
+                        <div className="box">
+                            <span className="subtitle">Best play</span>
+                            <span className="data">{this.state.total.best_played}</span>
+                        </div>
+
+                        <div className="box">
+                            <span className="subtitle">insomnia</span>
+                            <span className="data">{this.state.insomnia.score}</span>
+                        </div>
+                        <div className="box">
+                            <span className="subtitle">overhit</span>
+                            <span className="data">{this.state.overhit.score} </span>
+                        </div>
+
+                        <div className="box">
+                            <span className="subtitle">orangefamily</span>
+                            <span className="data">{this.state.orangefamily.score} </span>
+                        </div>
+
+                        <div className="box">
+                            <span className="subtitle">meisterboi</span>
+                            <span className="data">{this.state.meisterboi.score} </span>
+                        </div>
                     </div>
                     <GameList gamelist={this.state.matches}></GameList>
                 </div>
