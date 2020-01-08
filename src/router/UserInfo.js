@@ -110,26 +110,31 @@ export default class UserInfo extends React.Component {
                         </div>
 
                         <div className="box">
-                            <span className="subtitle">Best play</span>
+                            <span className="subtitle">최고 플레이</span>
                             <span className="data">{this.state.total.best_played}</span>
                         </div>
 
                         <div className="box">
-                            <span className="subtitle">insomnia</span>
+                            <span className="subtitle">Most play</span>
+                            <span className="data">{this.state.total.most_played}</span>
+                        </div>
+
+                        <div className="box">
+                            <span className="subtitle">insomnia 점수</span>
                             <span className="data">{this.state.insomnia.score}</span>
                         </div>
                         <div className="box">
-                            <span className="subtitle">overhit</span>
+                            <span className="subtitle">overhit 점수</span>
                             <span className="data">{this.state.overhit.score} </span>
                         </div>
 
                         <div className="box">
-                            <span className="subtitle">orangefamily</span>
+                            <span className="subtitle">orangefamily 점수</span>
                             <span className="data">{this.state.orangefamily.score} </span>
                         </div>
 
                         <div className="box">
-                            <span className="subtitle">meisterboi</span>
+                            <span className="subtitle">meisterboi 점수</span>
                             <span className="data">{this.state.meisterboi.score} </span>
                         </div>
                     </div>
