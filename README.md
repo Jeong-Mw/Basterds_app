@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+팀 프로젝트 게임 전적 검색을 위한 리엑트 웹
+
 ## Available Scripts
 
 In the project directory, you can run:
