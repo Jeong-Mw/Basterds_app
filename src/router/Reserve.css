@@ -1,0 +1,43 @@
+.Reserve{
+    text-align: center;
+}
+
+.Reserve .box{
+    background-color: rgb(54, 54, 54);
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    padding: 2.8rem;
+    border-radius: 2rem;
+}
+
+.Reserve .btn{
+    margin: 10px;
+    font-size: 1.2rem;
+    padding: 10px;
+    width: 12rem;
+    border-radius: 19px;
+    border: solid 0px;
+    background-color: orange;
+}
+
+.Reserve .place div{
+    vertical-align: middle;
+    border-radius: 2rem;
+}
+
+.Reserve .playground{
+    display: inline-block;
+    margin: 2rem;
+    width: 20rem;
+    height: 20rem;
+    background-color: silver;
+}
+
+.Reserve .hall{
+    display: inline-block;
+    width: 20rem;
+    height: 10rem;
+    margin: 2rem;
+    background-color: silver;
+}
